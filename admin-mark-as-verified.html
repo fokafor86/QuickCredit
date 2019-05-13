@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/admin-mark-as-verified.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="side-menu">
+            <img src="./images/logo.jpg" alt="">
+            <nav>
+                <ul style="display: block;">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="repayment-historyPage.html">
+                        <li>Loan Repayment History</li>
+                    </a>
+                    <a href="admin-mark-as-verified.html">
+                        <li>Verify Client</li>
+                    </a>
+                    <a href="all-loan-application.html">
+                        <li>All Loan application</li>
+                    </a>
+                    <a href="nill-and-partial-paid-loan.html">
+                        <li>Verify Full repayment</li>
+                    </a>
+                    <a href="current-and-partially-paid.html">
+                        <li>All Current Loan</li>
+                    </a>
+                    <a href="all-repaid-loans.html">
+                        <li>All Repaid Loan</li>
+                    </a>
+                    <a href="user-loan-status.html">
+                        <li>Clients Loan Status</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile-menu">
+            <button class="accordion"><img src="./images/logo.jpg" alt="logo"> <img src="./images/menu-alt.svg"
+                    class="menu-icon"></button>
+            <div class="panel">
+                <nav class="main-menu">
+                    <ul style="display: block;">
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="repayment-historyPage.html">
+                            <li>Loan Repayment History</li>
+                        </a>
+                        <a href="admin-mark-as-verified.html">
+                            <li>Verify Client</li>
+                        </a>
+                        <a href="all-loan-application.html">
+                            <li>All Loan application</li>
+                        </a>
+                        <a href="nill-and-partial-paid-loan.html">
+                            <li>Verify Full repayment</li>
+                        </a>
+                        <a href="current-and-partially-paid.html">
+                            <li>All Current Loan</li>
+                        </a>
+                        <a href="all-repaid-loans.html">
+                            <li>All Repaid Loan</li>
+                        </a>
+                        <a href="user-loan-status.html">
+                            <li>Clients Loan Status</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="loan-card">
+            <h5 class="serialNumber">1</h5>
+            <h5 class="card-header">VERIFY CLIENT</h5>
+            <div class="email">
+                <p class="title mb-4">Email</p>
+                <h5 class="nameEmail">Emmanuel@andela.com</h5>
+            </div>
+            <div class="first-name">
+                <p class="title">First Name</p>
+                <h5>Emmanuel</h5>
+            </div>
+            <div class="last-name">
+                <p class="title">Last Name</p>
+                <h5>Okafor</h5>
+            </div>
+            <div class="status">
+                <p class="title">Status</p>
+                <h5>Pending</h5>
+            </div>
+
+            <div class="action">
+                <p class="title mb-4">Action</p>
+                <button class="accept">Verify</button>
+            </div>
+        </div>
+
+        <div class="repayment-history-container" style=" background: white;">
+            <h1>VERIFY CLIENT</h1>
+            <table>
+                <tr>
+                    <th class="text-center p-0">S/N</th>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Status</th>
+                    <th class="w-25">Action</th>
+                </tr>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>
+                        <h5>emmanuel@andela.com</h5>
+                    </td>
+                    <td>
+                        <h5>Emmanuel</h5>
+                    </td>
+                    <td>
+                        <h5>Okafor</h5>
+                    </td>
+                    <td>
+                        <h5>Pending</h5>
+                    </td>
+                    <td><button class="accept">Verify</button></td>
+                </tr>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>
+                        <h5>felix@andela.com</h5>
+                    </td>
+                    <td>
+                        <h5>Felix</h5>
+                    </td>
+                    <td>
+                        <h5>Okafor</h5>
+                    </td>
+                    <td>
+                        <h5>Pending</h5>
+                    </td>
+                    <td><button class="accept">Verify</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
