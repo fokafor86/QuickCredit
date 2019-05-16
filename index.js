@@ -1,5 +1,5 @@
 
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion"); 
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -28,12 +28,12 @@ function scrollFunction() {
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginRight = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginRight = "0";
 }
 
 
@@ -41,3 +41,5 @@ function closeNav() {
 function login() {
   document.getElementById("demo").window = `<a href="user-signup.html"></a>`;
 }
+
+

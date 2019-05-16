@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/nill-and-partial-paid-loan.css">
+    <link rel="stylesheet" href="./css/nill-and-partial-paid-loan.css"> 
     <title>Document</title>
 </head>
 
 <body>
     <div class="dashboard-container">
         <div class="side-menu">
-            <img src="./images/logo.jpg" alt="">
+            <a href = "index.html"><img src="./images/image6.png" alt="logo"></a>
             <nav>
                 <ul style="display: block;">
-                    <a href="home-page.html">
+                    <a href="index.html">
                         <li>Home</li>
                     </a>
                     <a href="repayment-historyPage.html">
@@ -27,7 +27,7 @@
                         <li>All Loan application</li>
                     </a>
                     <a href="nill-and-partial-paid-loan.html">
-                        <li>Verify Full repayment</li>
+                        <li class="active">Verify Full repayment</li>
                     </a>
                     <a href="current-and-partially-paid.html">
                         <li>All Current Loan</li>
@@ -42,40 +42,19 @@
             </nav>
         </div>
 
-        <div class="mobile-menu">
-            <button class="accordion"><img src="./images/logo.jpg" alt="logo"> <img src="./images/menu-alt.svg"
-                    class="menu-icon"></button>
-            <div class="panel">
-                <nav class="main-menu">
-                    <ul style="display: block;">
-                        <a href="home-page.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="repayment-historyPage.html">
-                            <li>Loan Repayment History</li>
-                        </a>
-                        <a href="admin-mark-as-verified.html">
-                            <li>Verify Client</li>
-                        </a>
-                        <a href="all-loan-application.html">
-                            <li>All Loan application</li>
-                        </a>
-                        <a href="nill-and-partial-paid-loan.html">
-                            <li>Verify Full repayment</li>
-                        </a>
-                        <a href="current-and-partially-paid.html">
-                            <li>All Current Loan</li>
-                        </a>
-                        <a href="all-repaid-loans.html">
-                            <li>All Repaid Loan</li>
-                        </a>
-                        <a href="user-loan-status.html">
-                            <li>Clients Loan Status</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
+        <div id="mySidebar" class="sidebar admin-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><p>Home</p></a>
+            <a href="repayment-historyPage.html"><p>Loan Repayment History</p></a>
+            <a href="admin-mark-as-verified.html"><p>Verify Client</p></a>
+            <a href="all-loan-application.html"><p>All Loan application</p></a>
+            <a href="nill-and-partial-paid-loan.html"><p class="active2">Verify Full repayment</p></a>
+            <a href="current-and-partially-paid.html"><p>All Current Loan</p></a>
+            <a href="all-repaid-loans.html"><p>All Repaid Loan</p></a>
+            <a href="user-loan-status.html"><p>Clients Loan Status</p></a>
         </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
 
         <div class="loan-card">
             <h5 class="serialNumber">1</h5>
@@ -102,7 +81,7 @@
             </div>
         </div>
 
-        <div class="repayment-history-container" style=" background: white;">
+        <div class="repayment-history-container">
             <h1>ALL LOAN WITH NILL BALANCE & REPAID IS FALSE</h1>
             <table>
                 <tr>
@@ -114,52 +93,12 @@
                     <th class="w-25">Action</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="fully-paid">Fully Paid</button></td>
+                    <td>1</td>
+                    <td>felixokafor46@andela.com</td>
+                    <td>Okafor felix</td>
+                    <td>20,000</td>
+                    <td>80,000</td>
+                    <td><button class="accept">Fully Paid</button></td>
                 </tr>
             </table>
         </div>

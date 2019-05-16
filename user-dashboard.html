@@ -9,46 +9,33 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 
-<body>
+<body> 
     <div class="dashboard-container">
         <div class="side-menu">
-            <img src="./images/logo.jpg" alt="logo">
+            <a href = "index.html"><img src="./images/image6.png" alt="logo"></a>
             <nav class="main-menu">
                 <ul style="display: block;">
-                    <a href="home-page.html">
-                        <li>HOME</li>
+                    <a href="user-dashboard.html">
+                        <li class="active">Home</li>
                     </a>
-                    <a href="home-page.html">
-                        <li>LOG OUT</li>
+                    <a href="index.html">
+                        <li>Log Out</li>
                     </a>
                     <a class="active" href="apply-for-loan.html">
-                        <li>APPLY FOR LOAN</li>
+                        <li>Apply For Loan</li>
                     </a>
                 </ul>
             </nav>
-
         </div>
-        <div class="mobile-menu">
-            <button class="accordion"><img src="./images/logo.jpg" alt="logo"> <img src="./images/menu-alt.svg"
-                    class="menu-icon"></button>
-            <div class="panel">
-                <nav class="main-menu">
-                    <ul style="display: block;">
-                        <a href="home-page.html">
-                            <li>HOME</li>
-                        </a>
-                        <a href="home-page.html">
-                            <li>LOG OUT</li>
-                        </a>
-                        <a class="active" href="apply-for-loan-page.html">
-                            <li>APPLY FOR LOAN</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
+        
+        <div id="mySidebar" class="sidebar admin-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="user-dashboard.html"><p class="active2">Home</p></a>
+            <a href="index.html"><p>Log Out</p></a>
+            <a href="apply-for-loan.html"><p>Apply For Loan</p></a>
         </div>
 
-
+        <button class="openbtn" onclick="openNav()">☰</button>
         <div class="loan-card">
             <h5 class="serialNumber">1</h5>
             <div class="nameEmail">
@@ -98,7 +85,7 @@
                     <th>Interest</th>
                     <th>Repaid</th>
                     <th>Balance</th>
-                    <th>Repay Loan</th>
+                    <th class="w-25">Repay Loan</th>
                 </tr>
                 <tr>
                     <td class="text-center">1</td>

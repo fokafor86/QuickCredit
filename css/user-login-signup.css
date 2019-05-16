@@ -6,6 +6,10 @@
     max-width : 80px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .login-grid {
     display: grid;
     grid-template-columns: auto 450px auto;
@@ -41,6 +45,21 @@
     font-size: 70%;
 }
 
+select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #f1f1f1;
+    font-size: 15px;
+}
+
+.register-box p {
+    line-height: 20px;
+}
+
+.month {
+    padding-top: 15px;
+}
+
 .login-box input[type="text"],
 input[type="email"],
 input[type="first-name"],
@@ -64,15 +83,17 @@ input[type="password"] {
 .login-box input[type="submit"] {
     border: none;
     outline: none;
-    color: #006400;
+    color: #fff;
+    background-color: #4CAF50;
     font-size: 16px;
     width: 100%;
     border-radius: 10px;
     padding: 12px;
+    transition: all.3s ease-in-out;
 }
 
 .login-box input[type="submit"]:hover {
-    background-color: #006400;
+    background-color: #444;
     color: #fff;
 }
 
@@ -84,7 +105,7 @@ input[type="password"] {
     font-family: 'Open Sans', sans-serif;
 }
 
-#main {
+#main1 {
     overflow: hidden;
 }
 
@@ -142,8 +163,11 @@ h3 {
 
 .nav {
     display: flex;
-    justify-content: center;
-    margin-right: 120px;
+    justify-content: flex-end;
+}
+
+.nav .home {
+    color: #4CAF50;
 }
 
 .nav a {
@@ -195,7 +219,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1024px) {
     .center2 {
         margin-top: 30px;
     }
@@ -210,50 +234,71 @@ h3 {
         padding: 10px 15px;
         border: none;
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 6.5%;
+        right: 0;
         transform: translate(-50%, -50%);
         margin-left: 13px;
+        border-radius: 0;
+        transition: all.3s ease-in-out;
+      }
+
+      .openbtn:hover {
+        background-color: #444;
+      }
+
+    .side-menu {
+        height: auto;
+        display: none;
     }
+
+    .admin-sidebar a p {
+        color:#fff;
+    }
+
     .sidebar {
         height: 99.97%;
         width: 0;
         position: fixed;
         z-index: 2;
         top: 0;
-        left: 0;
+        right: 0;
         background: linear-gradient(to right, rgb(71, 165, 32), rgb(114, 226, 67));
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
-    }
-    .sidebar a {
+        padding-top: 100px;
+        overflow: hidden;
+      }
+      
+      .sidebar a p{
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 16px;
+        text-transform: uppercase;
         color: #f1f1f1;
         display: block;
         transition: 0.3s;
-        margin-top: 10px;
-        margin-left: 50px;
-    }
-    .sidebar a:hover {
+        margin-top: 5px;
+        margin-left:50px; 
+      }
+      
+      .sidebar a p{
+        border-bottom: 1px solid rgba(76, 175, 79, 0.623);
+      }
+
+      .sidebar p:hover {
         color: #f1f1f1;
-        font-size: 30px;
-    }
-    .sidebar .closebtn {
+        font-size: 18px;
+      }
+      
+      .sidebar .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-    }
-    .openbtn:hover {
-        background-color: #444;
-    }
-    #main {
-        transition: margin-left .5s;
-    }
+        color: #f1f1f1;
+      }
+
 }
 
 @media only screen and (max-width: 768px) {
